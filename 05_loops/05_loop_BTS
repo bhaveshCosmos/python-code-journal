@@ -1,0 +1,11 @@
+my_list = [1,2,3,4,5]
+iter_tool = iter(my_list)
+print(iter_tool) # <list_iterator object at 0x0000013D8A850610>
+
+print(iter_tool.__next__()) # 1
+print(iter_tool.__next__()) # 2
+print(iter_tool.__next__()) # 3
+print(iter_tool) # <list_iterator object at 0x0000012E6BD40610>
+print(iter_tool.__next__()) # 4
+print(iter_tool.__next__()) # 5
+print(iter_tool.__next__()) # StopIteration
