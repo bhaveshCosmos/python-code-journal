@@ -32,3 +32,9 @@ for char in str_1:
     rev = char + rev
 print(rev)
 
+# Star Pyramid
+for row in range(1,11):
+    star = ""
+    for col in range(row):
+        star += "* "
+    print(star)
