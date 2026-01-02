@@ -1,0 +1,11 @@
+null_nested_list = [[0] * 5] * 3 # Shallow Copy
+print(null_nested_list)
+null_nested_list[0][2] = 55
+print(null_nested_list)
+
+
+list_1 = [1,2,4]
+list_2 = [77,88,99]
+concat_list = list_1 + list_2 + ["Apple"]
+print(concat_list)
+print("Apple" in concat_list)

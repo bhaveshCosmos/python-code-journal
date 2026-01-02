@@ -1,3 +1,4 @@
+# string is an immutable sequence of characters enclosed within single, double, or triple quotes in Python.
 language = "Python"
 print(language) # Python
 

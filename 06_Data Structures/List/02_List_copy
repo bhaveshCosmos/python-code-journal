@@ -1,0 +1,37 @@
+my_list = [1,2,3,4,5]
+shallow_list = my_list # Shallow Copy
+deep_list = my_list[:] # Deep Copy
+
+shallow_list[3] = 99
+deep_list[0] = 77
+
+print("Original: ", my_list)
+print("Shallow Copy: ",shallow_list)
+print("Deep Copy: ",deep_list)
+
+
+# Nested List
+my_nested_list = [[1,2],3,[4,5]]
+shallow_nested_list = my_nested_list
+deep_nested_list = my_nested_list[:]
+
+shallow_nested_list[0][1] = 99
+deep_nested_list[2][1] = 77
+
+print("Nested Original: ", my_nested_list)
+print("Nested Shallow Copy: ",shallow_nested_list)
+print("Nested Deep Copy: ",deep_nested_list)
+# change the original nested list because it directly modifies the inner list element (nested lists are mutable).
+
+# Methods
+import copy
+new_list = [[2,3],4,5]
+method_shallow = copy.copy(new_list)
+method_deep = copy.deepcopy(new_list)
+
+method_shallow[0][1] = 99
+method_shallow[0][0] = 77
+
+print("Methon Original: ", new_list)
+print("Method Shallow Copy: ",method_shallow)
+print("Method Deep Copy: ",method_deep)
