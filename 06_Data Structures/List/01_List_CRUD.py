@@ -41,3 +41,9 @@ print(laptops)
 
 laptops.clear()
 print(laptops)
+
+# Packing - Unpacking
+# Packing Unpacking
+packed_list = [1,2,3,3,4,5]
+a,b,*c,d =  packed_list
+print(a,b,c,d)

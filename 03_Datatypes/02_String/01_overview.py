@@ -22,6 +22,7 @@ print(str1.format(first_name, last_name))
 path = r"c:\user\python"
 print(path+"\\")
 
-'''
-    Immutable Datatype
-'''
+# Packing - Unpacking
+packed_string = "Hello, Python"
+a,b,*c,d =  packed_string
+print(a,b,c,d)
